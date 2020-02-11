@@ -1,0 +1,82 @@
+<%- include('partials/head.ejs') %>
+
+<body>
+
+  <%- include('partials/dashboard-navbar.ejs') %>
+
+
+
+  <div class="dashboard-main-grid">
+    <div class="dashboard-left-sidebar">
+      <%- include('partials/dashboard-menu.ejs') %>
+    </div>
+    <div class="dashboard-right-col">
+      <div class="dashboard-greeting">
+        <h3><span>Hello </span><%=email%></h3>
+      </div>
+
+      <div class="dashboard-heading">
+        <h3><span>ADD </span>POST</h3>
+      </div>
+
+      <%- include('partials/messages.ejs') %>
+
+
+
+      <form action="/dashboard-posts" method="POST" enctype="multipart/form-data">
+        <div class="form-grid-dashboard">
+          <div class="dashboard-label form-label">
+            <p>Post Title : </p>
+          </div>
+          <div class="dashboard-field">
+            <input value="<%=postTitle%>" name="post_title" id="post_title" type="text" class="form-input">
+          </div>
+          <div class="dashboard-label form-label">
+            <p>Post Subject : </p>
+          </div>
+          <div class="dashboard-field">
+            <select class="form-input" name="subject">
+              <option name="fintech" value="fintech">FinTech</option>
+              <option name="sport" value="sport">Sport</option>
+              <option name="stockmarket" value="stockmarket">Stock Markets</option>
+              <option name="cryptomarket" value="cryptomarket">Crypto Markets</option>
+              <option name="other" value="other">Other</option>
+            </select>
+          </div>
+          <div class="dashboard-label form-label">
+            <p>Author : </p>
+          </div>
+          <div class="dashboard-field">
+            <input value="<%=author%>" name="author" type="text" class="form-input">
+          </div>
+          <div class="textarea-label form-label">
+            <p>Post Body : </p>
+          </div>
+          <div class="dashboard-field">
+            <textarea name="postBody" class="form-input" cols="30" rows="18"><%=postBody%></textarea>
+          </div>
+          <div class="dashboard-label form-label">
+          </div>
+          <div class="dashboard-field">
+            <input id="file-upload" name="post-image-upload" type='file' />
+            <label for="file-upload" class="btn-dark upload-button">Upload Image</label>
+            <p id="file-path-value"></p>
+          </div>
+          <div class="dashboard-label form-label">
+          </div>
+          <div class="dashboard-field">
+            <button type="submit" class="btn-dark submit-btn">Create</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <script src="/js/alerts.js"></script>
+  <script src="/js/dashboard.js"></script>
+  <script src="/js/inputUpdate.js"></script>
+  <script src="https://kit.fontawesome.com/396c2cb1a5.js"></script>
+</body>
+
+</html>

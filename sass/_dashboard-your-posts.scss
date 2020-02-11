@@ -1,0 +1,38 @@
+.post-table {
+  width: 100%;
+  border: black 2px solid;
+  border-collapse: collapse;
+
+  th {
+    padding: 1.5rem;
+    text-align: left;
+    border: 1px solid $color-4;
+    background-color: $color-4;
+    color: white;
+    font-size: large;
+
+    span {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  td {
+    padding: 1.5rem;
+    text-align: left;
+    border: 1px solid $color-4;
+
+    img {
+      width: 150px;
+      height: 100px;
+    }
+
+    i {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+}

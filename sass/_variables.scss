@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700,800,900");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+// $color-1 : rgba(26, 26, 26, 1);
+$color-1 : rgb(0, 0, 0);
+$color-2 : rgb(29, 185, 84);
+// $color-4 : #4D6F85;
+$color-4 : rgb(29, 185, 84);
+$color-5 : rgb(1, 79, 28);
+
+$font-family : 'Nunito',
+sans-serif;
+
+
+.container {
+
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 6rem;
+  height: auto;
+}

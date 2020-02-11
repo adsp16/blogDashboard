@@ -1,0 +1,43 @@
+{
+  "name": "blogbackend",
+  "version": "1.0.0",
+  "description": "MVC",
+  "main": "app.js",
+  "engines": {
+    "node": "12.4.0",
+    "npm": "6.9.0"
+  },
+  "scripts": {
+    "start": " node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Price",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^16.1.8",
+    "@sendgrid/mail": "^6.5.1",
+    "aws-sdk": "^2.614.0",
+    "bcrypt": "^3.0.7",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-mysql-session": "^2.1.0",
+    "express-session": "^1.17.0",
+    "express-session-sequelize": "^2.2.0",
+    "express-validator": "^6.3.0",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "mysql2": "^2.0.2",
+    "nodemon": "^2.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^5.21.2"
+  }
+}

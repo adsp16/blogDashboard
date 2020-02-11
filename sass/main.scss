@@ -1,0 +1,72 @@
+@import './variables';
+@import './home';
+@import './mixins';
+@import './nav';
+@import './components/alert';
+@import './footer';
+@import './components/card';
+@import './components/form';
+@import './blog-post-single';
+@import './dashboard-posts';
+@import './dashboard-your-posts';
+@import './dashboard-usersettings';
+@import './login';
+@import './dashboard';
+@import './404';
+@import './components/avatar';
+@import './components/button';
+@import './mobile';
+@import './tablet';
+
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 300;
+  box-sizing: border-box;
+
+}
+
+p {
+  font-weight: lighter;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+
+i {
+  font-family: $font-family;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-body {
+
+  height: 400px;
+
+}

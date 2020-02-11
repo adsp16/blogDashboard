@@ -1,0 +1,48 @@
+<%- include('partials/head.ejs') %>
+
+<body>
+
+  <%- include('partials/dashboard-navbar.ejs') %>
+
+  <div class="dashboard-main-grid">
+    <div class="dashboard-left-sidebar">
+      <%- include('partials/dashboard-menu.ejs') %>
+    </div>
+
+    <div class="dashboard-right-col">
+      <div class="dashboard-greeting">
+        <h3><span>Hello </span><%=email%></h3>
+        <%- include('partials/messages.ejs') %>
+      </div>
+      <div class="dashboard-right-grid">
+        <div class="dashboard-card">
+          <a href="dashboard-posts"></a>
+          <div class="title-dash">
+            <i class="fas fa-plus-circle"></i>
+            <h3>Add Post</h3>
+          </div>
+        </div>
+        <div class="dashboard-card">
+          <a href="dashboard-your-posts"></a>
+          <div class="title-dash">
+            <i class="fas fa-plus-circle"></i>
+            <h3>Your Posts</h3>
+          </div>
+        </div>
+        <div class="dashboard-card">
+          <a href="/dashboard-usersettings"></a>
+          <div class="title-dash">
+            <i class="fas fa-plus-circle"></i>
+            <h3>User Settings</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/alerts.js"></script>
+  <script src="/js/dashboard.js"></script>
+  <script src="https://kit.fontawesome.com/396c2cb1a5.js"></script>
+</body>
+
+</html>

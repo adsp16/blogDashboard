@@ -1,0 +1,66 @@
+@media all and (max-width : 920px) {
+
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-banner-title {
+    display: none;
+  }
+
+  .sub-form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+
+  }
+
+  .sub-submit {
+
+    margin-top: 0.5rem;
+  }
+
+  .dashboard-right-grid {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    width: 100%;
+
+  }
+
+
+
+  .blog-banner-img {
+    width: 100%;
+  }
+
+  .single-post-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rp-boxes {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .rp-box {
+    margin: 1rem 1rem 1rem 0rem;
+
+    img {
+      width: 100%;
+      height: 15em;
+    }
+  }
+
+
+}

@@ -1,0 +1,136 @@
+<%- include('partials/head.ejs') %>
+
+<body>
+
+  <%- include('partials/navigation.ejs') %>
+
+  <!-- Main Body Content -->
+
+  <div class="container">
+    <!-- Container Start -->
+
+    <div class="single-post-grid">
+      <div class="main-col-article-left">
+        <div class="main-article">
+          <div class="b-post-heading">
+            <h6>Cryptocurrency</h6>
+            <h3><%=title%></h3>
+            <div class="single-post-bread">
+
+              <p class="single-bread-item"><%=author%></p>
+            </div>
+          </div>
+          <div class="single-main-image">
+            <img src='<%=image%>' alt=""></p>
+          </div>
+          <div class="single-main-text">
+            <p><%=postbody%></p>
+            <div class="author-banner">
+              <div class="author-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1537815749002-de6a533c64db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=845&q=80"
+                  alt="">
+              </div>
+              <div class="author-wrap">
+                <div class="author-social">
+                  <h3>Jimmy Cricket</h3>
+                  <i class="fas fa-envelope"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-linkedin"></i>
+                  <i class="fas fa-rss"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook"></i>
+                </div>
+                <div class="author-desc">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam aspernatur consequuntur, nemo unde
+                    atque ipsum odit mollitia tempore voluptas rerum,
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="related-posts">
+              <h3 class="under-line-heading">Related Posts</h3>
+              <p class="under-line"></p>
+              <div class="rp-boxes">
+                <% relatedPosts.forEach((post) => {%>
+                <div class="rp-box">
+                  <img src="<%=post.image%>" alt="">
+                  <div class="rp-heading-views">
+                    <a href="/blogpost/<%=post.id%>"><%=post.title.slice(0, 40)%></a>
+                    <div class="rp-bread">
+                      <p><%=post.createdAt.toDateString()%></p>
+                      <p><%=post.author%></p>
+                    </div>
+                  </div>
+                </div>
+                <% }) %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-col-article-right">
+        <div class="most-popular">
+          <h3 class="under-line-heading">Most Popular</h3>
+          <p class="under-line"></p>
+          <div class="mp-box">
+            <div class='thumbImg'>
+              <img src="/img/blogbit2.jpg" alt="">
+            </div>
+            <div class="mp-heading-views">
+              <p>This Week in Bitcoin: Half Full or Half Empty?</p>
+              <i class="fab fa-hotjar"><span>5666 Views</span></i>
+            </div>
+          </div>
+          <div class="mp-box">
+            <div class='thumbImg'>
+              <img src="/img/money-1.jpg" alt="">
+            </div>
+            <div class="mp-heading-views">
+              <p>This Week in Bitcoin: Half Full or Half Empty?</p>
+              <i class="fab fa-hotjar"><span>4566 Views</span></i>
+            </div>
+          </div>
+          <div class="mp-box">
+            <div class='thumbImg'>
+              <img src="/img/block-1.jpg" alt="">
+            </div>
+            <div class="mp-heading-views">
+              <p>This Week in Bitcoin: Half Full or Half Empty?</p>
+              <i class="fab fa-hotjar"><span>56788 Views</span></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-link-sidebar">
+          <h3 class="under-line-heading">Social Links</h3>
+          <p class="under-line"></p>
+          <div class="flex-social-links">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+
+        <div class="pages-box-sidebar">
+          <h3 class="under-line-heading">Pages</h3>
+          <p class="under-line"></p>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">CrytoCurrency</a></li>
+            <li><a href="#">Charts</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Container End -->
+
+
+  <%- include('partials/footer.ejs') %>
+</body>
+
+</html>

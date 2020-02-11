@@ -1,0 +1,96 @@
+.nav {
+
+
+  @include box-shadow;
+  display: flex;
+  justify-content: space-between;
+  background: $color-1;
+  align-items: center;
+  min-height: 8vh;
+  padding: 0 6rem;
+  width: 100%;
+  position: sticky;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  span {
+    color: $color-4;
+  }
+
+  h3 {
+    margin: 0;
+    color: white;
+    font-weight: 300;
+    margin: 0 1rem;
+    font-weight: 600;
+  }
+
+  img {
+    height: 70px;
+    width: 75px;
+    border-radius: 60%;
+
+  }
+
+}
+
+.navi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a {
+    margin: 0 0.3rem;
+    flex: 0 0 auto;
+    text-decoration: none;
+    color: $color-4;
+    font-weight: 600;
+  }
+}
+
+.burger {
+
+  display: flex;
+  flex-direction: column;
+  display: none;
+  cursor: pointer;
+
+}
+
+.line-1 {
+
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background: $color-4;
+  ;
+}
+
+.line-2 {
+
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background: $color-4;
+}
+
+.line-3 {
+
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background: $color-4;
+
+}
+
+.nav-social {
+  display: none;
+
+  i {
+    color: white;
+  }
+}

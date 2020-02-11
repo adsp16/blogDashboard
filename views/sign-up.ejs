@@ -1,0 +1,33 @@
+<%- include('partials/head.ejs') %>
+
+<body>
+
+  <%- include('partials/navigation.ejs') %>
+
+  <div class="sign-in-grid">
+    <div class="card login-card">
+      <h3>Sign Up</h3>
+      <% if (error != '') { %>
+      <div class="alert alert-failure"><%=error%></div>
+      <% } %>
+      <% if (error_message != '') { %>
+      <div class="alert alert-failure"><%=error_message%></div>
+      <% } %>
+      <form class="signin-form" action="/signup" method="POST">
+        <p class="form-label">Email</p>
+        <input class="form-input" type="text" id="email" name="email" placeholder="Enter your email">
+        <p class="form-label">Password</p>
+        <input class="form-input" type="password" id="password" name="password" placeholder="Enter your password">
+        <p class="form-label">Repeat Password</p>
+        <input class="form-input" type="password" id="repeatpassword" name="repeatpassword"
+          placeholder="Repeat Password">
+        <button type="submit" class="btn-dark">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <%- include('partials/footer.ejs') %>
+
+</body>
+
+</html>

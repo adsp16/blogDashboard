@@ -1,0 +1,33 @@
+<header class="nav">
+  <div class="logo">
+    <img src="/img/BackgroundLogo1DB954.png" alt="">
+    <h3 class="logo_name"><span>BLOG</span>TEMPLATE</h3>
+  </div>
+  <div class="navi">
+    <div class="nav-links">
+
+
+      <% if (isLoggedIn) { %>
+      <a class="nav-text" href="/">Home</a>
+      <a class="nav-text" href="/dashboard">Dashboard</a>
+      <a class="nav-text" href="/logout">Log Out</a>
+      <% } else { %>
+      <a class="nav-text" href="/">Home</a>
+      <a class="nav-text" href="/login">Log In</a>
+      <% } %>
+      <% if (!isLoggedIn) { %>
+      <a class="nav-text" href="/signup">Sign Up</a>
+      <% } %>
+      <div class="nav-social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+    <div class="burger">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+      <div class="line-3"></div>
+    </div>
+  </div>
+</header>

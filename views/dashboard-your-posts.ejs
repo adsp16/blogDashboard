@@ -1,0 +1,71 @@
+<%- include('partials/head.ejs') %>
+
+<body>
+
+  <%- include('partials/dashboard-navbar.ejs') %>
+
+
+
+  <div class="dashboard-main-grid">
+
+    <div class="dashboard-left-sidebar">
+      <%- include('partials/dashboard-menu.ejs') %>
+    </div>
+
+
+    <div class="dashboard-right-col">
+      <div class="dashboard-greeting">
+        <h3><span>Hello </span><%=email%></h3>
+      </div>
+      <div class="dashboard-heading">
+        <h3><span>YOUR</span> POSTS</h3>
+      </div>
+
+      <div class="table-card" style="overflow-x:auto">
+        <% if (!posts) { %>
+        <table class="post-table">
+          <tr>
+            <th>Post Title</th>
+            <th>Authour</th>
+            <th>Owner</th>
+            <th>Image</th>
+            <th><span>Edit Post</span></th>
+          </tr>
+          <tr>
+            <td>There is no table data</td>
+          </tr>
+        </table>
+        <% } else { %>
+
+        <table class="post-table">
+          <tr>
+            <th>Post Title</th>
+            <th>Authour</th>
+            <th>Owner</th>
+            <th>Image</th>
+            <th><span>Edit Post</span></th>
+          </tr>
+          <% posts.forEach((post) => { %>
+          <tr>
+            <td><%=post.title%></td>
+            <td><%=post.author%></td>
+            <td><%=post.user%></td>
+            <td><img src="<%=post.image%>" alt=""></td>
+            <td><a href="/dashboard-editpost/<%=post.id%>"><i class="fas fa-edit"></i></a></td>
+          </tr>
+          <% }) %>
+        </table>
+        <% } %>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="/js/alerts.js"></script>
+  <script src="/js/dashboard.js"></script>
+  <script src="/js/inputUpdate.js"></script>
+  <script src="https://kit.fontawesome.com/396c2cb1a5.js"></script>
+</body>
+
+</html>

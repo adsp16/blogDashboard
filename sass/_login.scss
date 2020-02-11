@@ -1,0 +1,63 @@
+.sign-in-grid {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EEEEEE;
+  height: 100vh;
+
+}
+
+.login-card {
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+  padding: 2em;
+  margin-top: 3em;
+
+
+  h3 {
+    margin: 0.5rem 0rem;
+    font-size: 2.5rem;
+
+  }
+
+  p {
+    margin: 0.5rem 0rem;
+  }
+
+
+}
+
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+
+
+  button {
+    margin: 1em 0;
+    border: none;
+  }
+
+  input {
+    margin-bottom: 1.5em;
+  }
+
+}
+
+.login-links {
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+
+  a {
+    text-decoration: none;
+    color: $color-4;
+    font-weight: 600;
+  }
+
+
+
+}

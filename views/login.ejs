@@ -1,0 +1,45 @@
+<%- include('partials/head.ejs') %>
+
+<body>
+
+  <%- include('partials/navigation.ejs') %>
+
+
+  <div class="sign-in-grid">
+    <div class="card login-card">
+      <h3>Log in</h3>
+      <% if (error != '') { %>
+      <div class="alert alert-failure"><%=error%></div>
+      <% } %>
+      <% if (error_message != '') { %>
+      <div class="alert alert-failure"><%=error_message%></div>
+      <% } %>
+      <form action="/login" class="signin-form" method="POST">
+        <p class="form-label">Email</p>
+        <% if (error != '') { %>
+        <input class="form-input" value="<%=email%>" type="text" id="email" name="email"
+          placeholder="Enter your username/email">
+        <% } else { %>
+        <input class="form-input" type="text" id="email" name="email" placeholder="Enter your username/email">
+        <% } %>
+        <p class="form-label">Password</p>
+        <% if (error != '') { %>
+        <input class="form-input" value="<%=password%>" type="password" id="password" name="password"
+          placeholder="Enter your password">
+        <% } else { %>
+        <input class="form-input" type="password" id="password" name="password" placeholder="Enter your password">
+        <% } %>
+        <button type="submit" class="btn-dark">Log in</button>
+      </form>
+    </div>
+    <div class="login-links">
+      <a href="/signup">Create a new account</a>
+      <a href="/reset-password">Forgot your password?</a>
+    </div>
+  </div>
+
+  <%- include('partials/footer.ejs') %>
+
+</body>
+
+</html>

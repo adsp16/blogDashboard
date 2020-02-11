@@ -1,0 +1,50 @@
+.form-grid-dashboard {
+
+  display: grid;
+  grid-template-columns: auto 90%;
+  grid-template-rows: auto;
+  margin: 1.5rem 0rem;
+  grid-gap: 2.5rem 0rem;
+}
+
+
+.inline-form-field {
+
+  p {
+    margin-right: 1rem;
+    font-weight: 600;
+    font-size: large;
+  }
+}
+
+.dashboard-label {
+  grid-template-columns: 1 /span 1;
+  align-self: center;
+  white-space: nowrap;
+
+  p {
+    margin-right: 1rem;
+
+  }
+
+}
+
+.dashboard-field {
+  grid-template-columns: 2 /span 1;
+
+  p {
+    margin: 1.5rem 0rem;
+    color: $color-4;
+    font-weight: 600;
+  }
+}
+
+.text-area-label {
+  align-self: flex-start;
+}
+
+.custom-file-upload {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid #A9A9A9;
+}

@@ -1,0 +1,88 @@
+<%- include('partials/head.ejs') %>
+
+<body>
+
+  <%- include('partials/navigation.ejs') %>
+
+  <div class="container">
+
+
+    <div class="blog-grid">
+      <div class="card-grid">
+        <% posts.forEach((post) => { %>
+        <div class="blog-card">
+          <a class="link-img-wrap" href="blogpost/<%=post.id%>">
+            <img src="<%=post.image%>" alt=""></img>
+          </a>
+          <p class="blog-subject">Fintech</p>
+          <a href="/blogpost/<%=post.id%>" class="blog-title"><%=post.title%></a>
+          <div class="blog-card-bread">
+            <p><%=post.createdAt.toDateString() %></p>
+            <p><%=post.author%></p>
+          </div>
+          <div class="blog-card-summary">
+            <p><%=post.postbody.slice(0, 100)%></p>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+
+      <div class="blog-sidebar">
+        <div class="sidebar-sub-card">
+          <%- include('partials/messages.ejs') %>
+          <div class="icon">
+            <i class="far fa-envelope"></i>
+          </div>
+          <div class="sub-heading">
+            <h3>Get News, <span>Every Morning</span></h3>
+          </div>
+          <div class="sub-para">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, libero.</p>
+          </div>
+          <div class="sub-input-div">
+            <form class="sub-form" action="/" method="POST">
+              <input class="sub-input" type="text" placeholder="Email address" name="email" id="email">
+              <button type="submit" class="sub-submit">Sign Up</button>
+              <!-- <input class="sub-submit" type="submit" value="Sign Up" > -->
+            </form>
+          </div>
+        </div>
+
+        <div class="most-popular">
+          <h3 class="under-line-heading">Most Popular</h3>
+          <p class="under-line"></p>
+
+          <% featuredPosts.forEach((post) => { %>
+          <div class="mp-box">
+            <div class='thumbImg'>
+              <img src="<%=post.image%>" alt="">
+            </div>
+            <div class="mp-heading-views">
+              <p><%=post.title.slice(0, 50) %></p>
+              <i class="fab fa-hotjar"><span>8330 Views</span></i>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+
+      <div class="blog-banner">
+        <div class="blog-banner-img">
+          <img src="/img/cryptoBanner.jpg" alt="">
+        </div>
+        <div class="blog-banner-title">
+          <i class="far fa-comment-alt"><span>Opinion</span></i>
+          <h3>Ledger Addresses Man in the Middle Attack That Threatens Millions</h3>
+          <p>Jimmy Cricket</p>
+          <a class="btn-light" href="/signup">Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <%- include('partials/footer.ejs') %>
+
+</body>
+
+</html>

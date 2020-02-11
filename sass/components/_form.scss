@@ -1,0 +1,24 @@
+.form-input {
+  padding: 15px;
+  width: 100%;
+  margin: 0.5rem 0rem;
+}
+
+.form-input::placeholder {
+  opacity: 0.5;
+}
+
+.form-label {
+
+  color: $color-4;
+  font-size: 0.9em;
+
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.radio-input {
+  margin: 1rem 1rem;
+}

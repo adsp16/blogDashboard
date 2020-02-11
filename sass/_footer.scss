@@ -1,0 +1,118 @@
+.main-footer {
+
+  background: $color-1;
+  color: white;
+  padding: 2rem 8rem;
+  width: 100%;
+
+
+}
+
+.f-bar-one {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+
+.f-bar-two {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.f-box-one {
+  display: flex;
+  justify-self: flex-start;
+}
+
+.f-box-four {
+  display: flex;
+  align-items: center;
+
+  i {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 2rem;
+  }
+}
+
+.f-box-three {
+  p {
+    color: $color-4;
+  }
+}
+
+.f-logo {
+  display: flex;
+
+
+  img {
+    margin-right: 0.7rem;
+    height: 70px;
+    width: 75px;
+    border-radius: 60%;
+  }
+
+  p {
+    font-weight: 600;
+    align-self: center;
+  }
+}
+
+.f-numberdiv {
+  display: flex;
+  margin: 1rem 0;
+
+  p {
+    margin: 0;
+    color: $color-4;
+  }
+}
+
+.f-numbers {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-n-con1 {
+  margin: 0.5rem 0.4rem;
+}
+
+.f-n-con2 {
+  margin: 0.5rem 0.4rem;
+}
+
+
+.f-link-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.f-link-box {
+  margin-right: 2rem;
+}
+
+.f-link {
+  margin: 1rem 0;
+  color: $color-4;
+  cursor: pointer;
+}
+
+.f-link:hover {
+
+  color: white;
+}
+
+.f-bread {
+  color: white;
+
+  a {
+    color: white;
+    margin-right: 1.2rem;
+  }
+
+  a:hover {
+    color: $color-4
+  }
+}
