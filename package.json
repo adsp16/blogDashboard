@@ -17,7 +17,7 @@
     "@hapi/joi": "^16.1.8",
     "@sendgrid/mail": "^6.5.1",
     "aws-sdk": "^2.614.0",
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "connect-flash": "^0.1.1",
